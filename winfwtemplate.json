@@ -1,0 +1,161 @@
+{
+    "order": 0,
+    "index_patterns": [
+      "windowsfw-*"
+    ],
+    "mappings": {
+      "_doc": {
+        "_source": {},
+        "_meta": {},
+        "properties": {
+          "@timestamp": {
+            "type": "date"
+          },
+          "Computer_Name": {
+            "type": "text",
+            "fields": {
+              "Computer_Name": {
+                "type": "keyword"
+              }
+            }
+          },
+          "Domain_Name": {
+            "type": "text",
+            "fields": {
+              "Domain_Name": {
+                "type": "keyword"
+              }
+            }
+          },
+          "action": {
+            "type": "text",
+            "fields": {
+              "action": {
+                "type": "keyword"
+              }
+            }
+          },
+          "dstip": {
+            "type": "ip"
+          },
+          "dstip_geoip": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "latitude": {
+                "type": "half_float"
+              },
+              "location": {
+                "type": "geo_point"
+              },
+              "longitude": {
+                "type": "half_float"
+              }
+            }
+          },
+          "dstport": {
+            "type": "integer"
+          },
+          "icmpcode": {
+            "type": "text",
+            "fields": {
+              "icmpcode": {
+                "type": "keyword"
+              }
+            }
+          },
+          "icmptype": {
+            "type": "text",
+            "fields": {
+              "icmptype": {
+                "type": "keyword"
+              }
+            }
+          },
+          "info": {
+            "type": "text",
+            "fields": {
+              "info": {
+                "type": "keyword"
+              }
+            }
+          },
+          "path": {
+            "type": "text",
+            "fields": {
+              "path": {
+                "type": "keyword"
+              }
+            }
+          },
+          "protocol": {
+            "type": "text",
+            "fields": {
+              "protocol": {
+                "type": "keyword"
+              }
+            }
+          },
+          "size": {
+            "coerce": true,
+            "index": true,
+            "ignore_malformed": false,
+            "store": false,
+            "type": "byte",
+            "doc_values": true
+          },
+          "srcip": {
+            "type": "ip"
+          },
+          "srcip_geoip": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "latitude": {
+                "type": "half_float"
+              },
+              "location": {
+                "type": "geo_point"
+              },
+              "longitude": {
+                "type": "half_float"
+              }
+            }
+          },
+          "srcport": {
+            "type": "integer"
+          },
+          "tcpack": {
+            "type": "integer"
+          },
+          "tcpflags": {
+            "eager_global_ordinals": false,
+            "index_phrases": false,
+            "fielddata": false,
+            "norms": true,
+            "index": true,
+            "store": false,
+            "type": "text",
+            "index_options": "positions",
+            "fields": {
+              "tcpflags": {
+                "type": "keyword"
+              }
+            }
+          },
+          "tcpsyn": {
+            "type": "integer"
+          },
+          "tcpwin": {
+            "type": "byte"
+          }
+        }
+      }
+    }
+  }

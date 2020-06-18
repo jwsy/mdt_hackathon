@@ -1,6 +1,10 @@
 # mdt_hackathon project ELK-IR
 Repo for mdt_hackathon elasticsearch content.
 
+> Check out the Overview-doc.docx for a quick overview with pics.
+
+Yes, I know I can put all that in this readme...one day it will happen.
+
 # Welcome
 ## Intro
 

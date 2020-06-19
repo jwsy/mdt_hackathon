@@ -1,6 +1,8 @@
 # mdt_hackathon project ELK-IR
 Repo for mdt_hackathon elasticsearch content.
 
+![Screenshot 0](assets/img/mdt-hackathon.png?raw=true "Screenshot 0")
+
 > Check out the Overview-doc.docx for a quick overview with pics.
 
 Yes, I know I can put all that in this readme...one day it will happen.

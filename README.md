@@ -12,7 +12,7 @@ Yes, I know I can put all that in this readme...one day it will happen.
 
 ## Instructions
 
-This is ready to sue for anyone who wants to analyze their local fw logs or collected fw logs from windows devices.
+This is ready to use for anyone who wants to analyze their local fw logs or collected fw logs from windows devices.
 
 ### Setup
 1. Download or clone this repo to a folder called ELK-IR

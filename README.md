@@ -1,9 +1,9 @@
 # mdt_hackathon project ELK-IR
 Repo for mdt_hackathon elasticsearch content.
 
-![Screenshot 0](assets/img/mdt-hackathon.png?raw=true "Screenshot 0")
+![Screenshot 0](assets/img/mdt-hackathon0.png)
 
-> Check out the Overview-doc.docx for a quick overview with pics.
+> Check out the Overview-doc.docx for a quick overview with pics and pics below
 
 Yes, I know I can put all that in this readme...one day it will happen.
 
@@ -27,4 +27,10 @@ This is ready to sue for anyone who wants to analyze their local fw logs or coll
 10. Input the location and credentials of the elasticsearch endpoint as well and the index starting with windowsfw- to match the template!
 11. Run > ./bin/logstash -f ./config/logstash.conf
 12. Log into you kibana instance and profit!
+
 Upload the included vizualization and dashboard files if you like.
+
+![Screenshot 0](assets/img/mdt-hackathon0.png)
+![Screenshot 1](assets/img/mdt-hackathon1.png)
+![Screenshot 2](assets/img/mdt-hackathon2.png)
+![Screenshot 2](assets/img/mdt-hackathon3.png)
